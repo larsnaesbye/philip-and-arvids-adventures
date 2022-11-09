@@ -1,20 +1,46 @@
-# Philip og Arvids eventyr
+### Philip og Arvids eventyr - HabFab & Grobund
 
 ```mermaid
-%%{init: {'theme': 'white', 'themeVariables': {'darkMode': false}, "flowchart" : { "curve" : "basis" } } }%%
-graph TD 
+%%{init: {'theme': 'neutral', 'themeVariables': {'darkMode': false}, "flowchart" : { "curve" : "basis" } } }%%
+flowchart TB
+subgraph PCs
 Philip[<B>Philip</B><BR />Scum Barge Veteran];
 Arvid[<B>Arvid</B><BR />Comet Express bud];
-Jacques[<B>Jacques</B><BR />Barsoomian gruppeleder];
+end
+subgraph Barsoomians
 Alan[<B>Alan</B><BR />Barsoomian];
-Alec[<B>Alec</B><BR />ex-Firewall agent<BR />Muterede af Exsurgent, skudt af Arvid og Philip]
+Jacques[<B>Jacques</B><BR />Barsoomian gruppeleder];
+end
+subgraph Firewall
+Alec[<B>Alec</B><BR />ex-Firewall agent<BR />Muterede af Exsurgent<BR />skudt af Arvid og Philip]
 Sylvest[<B>Sylvest</B><BR />Firewall kontakt]
-Sarda
-Aya
+Matt[<B>Matt</B><BR />Gorilla]
+Aisling[<B>Aisling</B><BR />Synthmorph]
+end
+subgraph Kandidater
+Sarda[<B>Dr. Sarda</B><BR />]
+Aya[<B>Aya</B><BR />ikke officiel kandidat<BR />Barsoomian?]
+Delvin[<B>Jasper Delvin</B><BR />]
+Althauser[<B>Viktor Althauser</B><BR />]
+end
+subgraph TharsisLeague
+Devghali[<B>Natascha Devghali</B><BR />generalsekretær, Tharsis League]
+Nichols[<B>Nichols</B><BR />ex-rådsmedlem i Tharsis League]
+Cosati[<B>Cosati</B><BR />ex-rådsmedlem i Tharsis League]
+end
+SilentStar[<B>Silent Star</B><BR />mystisk kult]
+Cypher[<B>Mark Cypher</B><BR />Konsulent og idémager]
 Nemo[<B>Nemo Stardust</B><BR />Meta-celebrity]
-
+Alam[<B>Alam</B><BR />ex-barejer<BR />Muterede af Exsurgent<BR />overdraget til Sylvest, formodentlig død]
 Sylvest -->|hyrede| Alec
-Alan <-->  Alec
-Philip --->|dræbte| Alec
-Arvid --->|dræbte| Alec
+Sylvest -->|hyrede| PCs
+Sylvest -->|hyrede| Matt
+Sylvest -->|hyrede| Aisling
+Alan <---> |var venner| Alec
+PCs --->|dræbte| Alec
+PCs --->|fangede| Alam
+PCs --->|har reddet| Alan
+Delvin --->|har skabt| Nemo
+SilentStar --->|influerer|Devghali
+Cypher --- |rådgav|PCs
 ```
