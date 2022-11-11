@@ -1,11 +1,11 @@
 ### Philip og Arvids eventyr - HabFab & Grobund
 
 ```mermaid
-%%{init: {'theme': 'neutral', 'themeVariables': {'darkMode': false}, "flowchart" : { "curve" : "basis" } } }%%
+%%{init: {'theme': 'neutral', "flowchart" : { "curve" : "basis" } } }%%
 flowchart TB
 subgraph PCs
 Philip[<B>Philip</B><BR />Scum Barge Veteran];
-Arvid[<B>Arvid</B><BR />Comet Express bud];
+Arvid[<B>Arvid</B><BR />Comet Express bud<BR />ex-Direct Action];
 end
 subgraph Barsoomians
 Alan[<B>Alan</B><BR />Barsoomian];
@@ -25,8 +25,8 @@ Althauser[<B>Victor Althauser</B><BR />Familien Althauser ejer Althauser Rocketr
 end
 subgraph TharsisLeague
 Devghali[<B>Natascha Devghali</B><BR />generalsekretær, Tharsis League]
-Nichols[<B>Nichols</B><BR />ex-rådsmedlem]
-Cosati[<B>Cosati</B><BR />ex-rådsmedlem]
+Nichols[<B>Nichols</B><BR />ex-rådsmedlem, anklaget for korruption]
+Cosati[<B>Cosati</B><BR />ex-rådsmedlem, anklaget for korruption]
 end
 SilentStar[<B>Silent Star</B><BR />mystisk kult]
 Cypher[<B>Mark Cypher</B><BR />Konsulent og idémager]
