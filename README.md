@@ -1,4 +1,4 @@
-### Philip og Arvids eventyr - HabFab & Grobund
+### Philip og Arvids eventyr
 
 ```mermaid
 %%{init: {'theme': 'neutral', "flowchart" : { "curve" : "basis" } } }%%
@@ -6,6 +6,7 @@ flowchart TB
 subgraph PCs
 Philip[<B>Philip</B><BR />Scum Barge Veteran];
 Arvid[<B>Arvid</B><BR />Comet Express bud<BR />ex-Direct Action];
+Business[HabFab og Grobund]
 end
 subgraph Barsoomians
 Alan[<B>Alan</B><BR />Barsoomian];
@@ -32,10 +33,15 @@ SilentStar[<B>Silent Star</B><BR />mystisk kult]
 Cypher[<B>Mark Cypher</B><BR />Konsulent og idémager]
 Nemo[<B>Nemo Stardust</B><BR />Meta-celebrity]
 Alam[<B>Alam</B><BR />ex-barejer<BR />Muterede af Exsurgent<BR />overdraget til Sylvest, formodentlig død]
+TTO[<B>Tharsis Terraforming Office</BR >HQ i New Shanghai]
+PlanCo[<B>Planetary Consortium</>]
 Sylvest -->|hyrede| Alec
 Sylvest -->|hyrede| PCs
 Sylvest -->|hyrede| Matt
 Sylvest -->|hyrede| Aisling
+Philip --- Business
+Arvid --- Business
+Business --->|handler med| Barsoomians
 Alan <---> |var venner| Alec
 PCs --->|dræbte| Alec
 PCs --->|fangede| Alam
