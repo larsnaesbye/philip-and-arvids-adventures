@@ -18,10 +18,10 @@ Matt[<B>Matt</B><BR />Gorilla]
 Aisling[<B>Aisling</B><BR />Synthmorph]
 end
 subgraph Kandidater
-Sarda[<B>Dr. Sarda</B><BR />]
+Sarda[<B>Dr. Sarda</B><BR />Imod behandling af indentured servants]
 Aya[<B>Aya</B><BR />ikke officiel kandidat<BR />Barsoomian?]
 Delvin[<B>Jasper Delvin</B><BR />Creative Director hos Arnault-Kieselhurst-Patrick]
-Althauser[<B>Victor Althauser</B><BR />]
+Althauser[<B>Victor Althauser</B><BR />Familien Althauser ejer Althauser Rocketry]
 end
 subgraph TharsisLeague
 Devghali[<B>Natascha Devghali</B><BR />generalsekretær, Tharsis League]
