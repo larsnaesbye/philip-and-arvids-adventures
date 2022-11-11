@@ -20,13 +20,13 @@ end
 subgraph Kandidater
 Sarda[<B>Dr. Sarda</B><BR />]
 Aya[<B>Aya</B><BR />ikke officiel kandidat<BR />Barsoomian?]
-Delvin[<B>Jasper Delvin</B><BR />]
-Althauser[<B>Viktor Althauser</B><BR />]
+Delvin[<B>Jasper Delvin</B><BR />Creative Director hos Arnault-Kieselhurst-Patrick]
+Althauser[<B>Victor Althauser</B><BR />]
 end
 subgraph TharsisLeague
 Devghali[<B>Natascha Devghali</B><BR />generalsekretær, Tharsis League]
-Nichols[<B>Nichols</B><BR />ex-rådsmedlem i Tharsis League]
-Cosati[<B>Cosati</B><BR />ex-rådsmedlem i Tharsis League]
+Nichols[<B>Nichols</B><BR />ex-rådsmedlem]
+Cosati[<B>Cosati</B><BR />ex-rådsmedlem]
 end
 SilentStar[<B>Silent Star</B><BR />mystisk kult]
 Cypher[<B>Mark Cypher</B><BR />Konsulent og idémager]
@@ -41,6 +41,7 @@ PCs --->|dræbte| Alec
 PCs --->|fangede| Alam
 PCs --->|har reddet| Alan
 Delvin --->|har skabt| Nemo
+Nemo --->|advokerer for| Delvin
 SilentStar --->|influerer|Devghali
 Cypher --- |rådgav|PCs
 ```
