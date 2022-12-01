@@ -28,8 +28,8 @@ end
 subgraph TharsisLeague
 TTO[<B>Tharsis Terraforming Office</BR >HQ i New Shanghai]
 Devghali[<B>Natascha Devghali</B><BR />generalsekretær, Tharsis League]
-Nichols[<B>Nichols</B><BR />ex-rådsmedlem, anklaget for korruption]
-Cosati[<B>Cosati</B><BR />ex-rådsmedlem, anklaget for korruption]
+Nichols[<B>Nichols</B><BR />ex-rådsmedlem, anklaget for korruption<BR />Valgt i Valles-New Shanghai]
+Cosati[<B>Cosati</B><BR />ex-rådsmedlem, anklaget for korruption<BR />Valgt i Elysium]
 end
 SilentStar[<B>Silent Star</B><BR />mystisk kult]
 Cypher[<B>Mark Cypher</B><BR />Konsulent og idémager]
