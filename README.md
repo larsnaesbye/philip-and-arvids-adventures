@@ -17,8 +17,7 @@ Alec[<B>Alec</B><BR />ex-Firewall agent<BR />Muterede af Exsurgent<BR />skudt af
 Sylvest[<B>Sylvest</B><BR />Firewall kontakt]
 Matt[<B>Matt</B><BR />Gorilla]
 Aisling[<B>Aisling</B><BR />Synthmorph]
-Rooster[<B>Rooster</B><BR />Efterforsker Silent Star]
-
+Rooster[<B>Rooster</B><BR />Proxy]
 end
 subgraph Kandidater
 Sarda[<B>Dr. Sarda</B><BR />Imod behandling af indentured servants]
@@ -35,6 +34,11 @@ end
 SilentStar[<B>Silent Star</B><BR />mystisk kult]
 Cypher[<B>Mark Cypher</B><BR />Konsulent og idémager]
 Nemo[<B>Nemo Stardust</B><BR />Meta-celebrity]
+Xander[<B>Xander the Explorer</B><BR />Nemos første co-host<BR />Forsvandt på exoplanet]
+Roland[<B>Roland</B><BR />]
+Minnie[<B>Minnie</B><BR />]
+Patricia[<B>Patricia Sousa</B><BR />]
+AngelGirl[<B>Angel Girl</B><BR />Meta-celebrity]
 Alam[<B>Alam</B><BR />ex-barejer<BR />Muterede af Exsurgent<BR />overdraget til Sylvest, formodentlig død]
 PlanCo[<B>Planetary Consortium</B></>]
 FaJing[<B>Fa Jing</B><BR />Leverer isasteroider<BR />Har fået nogle aftaler afvist</>]
@@ -55,5 +59,10 @@ Nemo --->|advokerer for| Delvin
 SilentStar --->|influerer?|Devghali
 SilentStar --->|influerer?|PlanCo
 Rooster --->|efterforsker|SilentStar
-Cypher --- |rådgav|PCs
+Cypher ---> |rådgav|PCs
+Nemo <---> |ekskærester| Patricia
+Nemo <---> |kærester| Minnie
+Nemo <---> |beef| AngelGirl
+Nemo --- Roland
+Nemo --- Xander
 ```
