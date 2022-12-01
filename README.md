@@ -36,7 +36,8 @@ SilentStar[<B>Silent Star</B><BR />mystisk kult]
 Cypher[<B>Mark Cypher</B><BR />Konsulent og idémager]
 Nemo[<B>Nemo Stardust</B><BR />Meta-celebrity]
 Alam[<B>Alam</B><BR />ex-barejer<BR />Muterede af Exsurgent<BR />overdraget til Sylvest, formodentlig død]
-PlanCo[<B>Planetary Consortium</>]
+PlanCo[<B>Planetary Consortium</B></>]
+FaJing[<B>Fa Jing</B><BR />Leverer isasteroider<BR />Har fået nogle aftaler afvist</>]
 Sylvest -->|hyrede| Alec
 Sylvest -->|hyrede| PCs
 Sylvest -->|hyrede| Matt
