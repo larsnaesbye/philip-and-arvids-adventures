@@ -1,0 +1,103 @@
+
+digraph G {
+    compound=true;
+    center=true;
+	bgcolor=floralwhite;
+    fontname="Roboto Slab";
+    label=<<FONT POINT-SIZE="30">Philip og Arvids eventyr</FONT>>;
+    labelloc=t
+    
+    node [shape=ellipse,style=filled,shape=box,fillcolor=lightgoldenrod1,fontname="Roboto"];
+
+subgraph cluster_Barsoomians {
+	    penwidth=3
+		label = <<B>Barsoomians</B>>;
+		style=filled;
+		bgcolor=lightblue;
+        Alan[label=<<B>Alan</B><BR />Barsoomian>];
+        Jacques[label=<<B>Jacques</B><BR />Barsoomian gruppeleder>];
+}
+subgraph cluster_Firewall {
+	    penwidth=3
+		label = <<B>Firewall</B>>;
+		style=filled;
+		bgcolor=lightblue;
+Alec[label = <<B>Alec</B><BR />ex-Firewall agent<BR />Muterede af Exsurgent<BR />skudt af Arvid og Philip>]
+Sylvest[label = <<B>Sylvest</B><BR />Firewall kontakt>]
+Matt[label = <<B>Matt</B><BR />Gorilla>]
+Aisling[label = <<B>Aisling</B><BR />Synthmorph>]
+Rooster[label = <<B>Rooster</B><BR />Proxy>]
+	subgraph cluster_PCs{
+	    penwidth=3
+		label = <<B>PCs</B>>;
+		style=filled;
+		bgcolor=lightblue;
+		node [style=filled];
+        Philip[label=<<B>Philip</B><BR />Scum Barge Veteran>];
+        Arvid[label=<<B>Arvid</B><BR />Comet Express bud<BR />ex-Direct Action>];
+        Business[label=<<B>HabFab og Grobund</B>>]
+
+	}
+}
+
+subgraph cluster_Kandidater {
+    	penwidth=3
+		label = <<B>Kandidater</B>>;
+		style=filled;
+		bgcolor=lightblue;
+
+Sarda[label=<<B>Dr. Sarda</B><BR />Imod behandling af indentured servants>]
+Aya[label=<<B>Aya</B><BR />ikke officiel kandidat<BR />Barsoomian?>]
+Delvin[label=<<B>Jasper Delvin</B><BR />Creative Director hos Arnault-Kieselhurst-Patrick>]
+Althauser[label=<<B>Victor Althauser</B><BR />Familien Althauser ejer Althauser Rocketry>]
+}
+
+subgraph cluster_TharsisLeague {
+    	penwidth=3
+		label = <<B>Tharsis League</B>>;
+		style=filled;
+		bgcolor=lightblue;
+TTO[label=<<B>Tharsis Terraforming Office</B><BR />HQ i New Shanghai>]
+Devghali[label=<<B>Natascha Devghali</B><BR />generalsekretær, Tharsis League>]
+Nichols[label=<<B>Nichols</B><BR />ex-rådsmedlem, anklaget for korruption<BR />Valgt i Valles-New Shanghai>]
+Cosati[label=<<B>Cosati</B><BR />ex-rådsmedlem, anklaget for korruption<BR />Valgt i Elysium>]
+}
+
+SilentStar[label=<<B>Silent Star</B><BR />mystisk kult>]
+Cypher[label=<<B>Mark Cypher</B><BR />Konsulent og idémager>]
+Nemo[label=<<B>Nemo Stardust</B><BR />Meta-celebrity>]
+Xander[label=<<B>Xander the Explorer</B><BR />Nemos første co-host<BR />Forsvandt på exoplanet>]
+Roland[label=<<B>Roland</B><BR />>]
+Minnie[label=<<B>Minnie</B><BR />>]
+Patricia[label=<<B>Patricia Sousa</B><BR />>]
+AngelGirl[label=<<B>Angel Girl</B><BR />Meta-celebrity>]
+Alam[label=<<B>Alam</B><BR />ex-barejer<BR />Muterede af Exsurgent<BR />overdraget til Sylvest, formodentlig død>]
+PlanCo[label=<<B>Planetary Consortium</B>>]
+FaJing[label=<<B>Fa Jing</B><BR />Leverer isasteroider<BR />Har fået nogle aftaler afvist>]
+
+
+Philip -> Business[dir=none];
+Arvid -> Business[dir=none];
+Sylvest ->Alec[label=<hyrede>]
+Sylvest ->Philip[label=<hyrede>, ltail=cluster_PCs]
+Sylvest ->Matt[label=<hyrede>]
+Sylvest ->Aisling[label=<hyrede>]
+Sylvest -> Rooster[label=<hyrede>]
+Business -> Barsoomians[label=<handler med>]
+Alan -> Alec[label=<var venner>,dir=both]
+Philip ->Alec[label=<dræbte>, ltail=cluster_PCs]
+Philip ->Alam[label=<fangede>, ltail=cluster_PCs]
+Philip ->Alan[label=<har reddet>, ltail=cluster_PCs]
+Delvin -> Nemo[label=<har skabt>]
+Nemo -> Delvin[label=<influerer?>]
+SilentStar -> Devghali[label=<influerer?>]
+SilentStar -> PlanCo[label=<influerer?>]
+Rooster -> SilentStar[label=<efterforsker>]
+Cypher -> Philip[label=<rådgav>, ltail=cluster_PCs]
+Nemo -> Patricia[label=<ekskærester>,dir=both]
+Nemo ->  Minnie[label=<kærester>,dir=both]
+Nemo -> AngelGirl[label=<beef>,dir=both]
+Nemo -> Roland
+Nemo -> Xander
+
+}
