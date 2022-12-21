@@ -14,8 +14,15 @@ subgraph cluster_Barsoomians {
 		label = <<B>Barsoomians</B>>;
 		style=filled;
 		bgcolor=lightblue;
-        Alan[label=<<B>Alan</B><BR />Barsoomian>];
-        Jacques[label=<<B>Jacques</B><BR />Barsoomian gruppeleder>];
+        Alan[label=<<B>Alan</B>>];
+        Jacques[label=<<B>Jacques</B><BR />Gruppeleder>];
+}
+subgraph cluster_PlanCo {
+	    penwidth=3
+		label = <<B>Planetary Consortium</B>>;
+		style=filled;
+		bgcolor=lightblue;
+		PlanCo[label=<<B>Planetary Consortium</B>>,style="invis"]
 }
 subgraph cluster_Firewall {
 	    penwidth=3
@@ -33,24 +40,13 @@ Rooster[label = <<B>Rooster</B><BR />Proxy>]
 		style=filled;
 		bgcolor=lightblue;
 		node [style=filled];
-        Philip[label=<<B>Philip</B><BR />Scum Barge Veteran>];
-        Arvid[label=<<B>Arvid</B><BR />Comet Express bud<BR />ex-Direct Action>];
+        Philip[label=<<B>Philip</B><BR />Scum Barge Veteran<BR /><I>Muse: Red Sonja</I>>];
+        Arvid[label=<<B>Arvid</B><BR />Comet Express bud<BR />ex-Direct Action<BR /><I>Muse: Skuld</I>>];
         Business[label=<<B>HabFab og Grobund</B>>]
-
+        Hænir[label=<<B>Hænir</B>>]
 	}
 }
 
-subgraph cluster_Kandidater {
-    	penwidth=3
-		label = <<B>Kandidater</B>>;
-		style=filled;
-		bgcolor=lightblue;
-
-Sarda[label=<<B>Dr. Sarda</B><BR />Imod behandling af indentured servants>]
-Aya[label=<<B>Aya</B><BR />ikke officiel kandidat<BR />Barsoomian?>]
-Delvin[label=<<B>Jasper Delvin</B><BR />Creative Director hos Arnault-Kieselhurst-Patrick>]
-Althauser[label=<<B>Victor Althauser</B><BR />Familien Althauser ejer Althauser Rocketry>]
-}
 
 subgraph cluster_TharsisLeague {
     	penwidth=3
@@ -59,8 +55,23 @@ subgraph cluster_TharsisLeague {
 		bgcolor=lightblue;
 TTO[label=<<B>Tharsis Terraforming Office</B><BR />HQ i New Shanghai>]
 Devghali[label=<<B>Natascha Devghali</B><BR />generalsekretær, Tharsis League>]
-Nichols[label=<<B>Nichols</B><BR />ex-rådsmedlem, anklaget for korruption<BR />Valgt i Valles-New Shanghai>]
-Cosati[label=<<B>Cosati</B><BR />ex-rådsmedlem, anklaget for korruption<BR />Valgt i Elysium>]
+Nichols[label=<<B>Nichols</B><BR />ex-rådsmedlem, anklaget for korruption<BR />Valgt i Valles-New Shanghai>, style=dotted]
+Cosati[label=<<B>Cosati</B><BR />ex-rådsmedlem, anklaget for korruption<BR />Valgt i Elysium>, style=dotted]
+
+subgraph cluster_Kandidater {
+    	penwidth=3
+		label = <<B>Kandidater</B>>;
+		style=filled;
+		bgcolor=green;
+
+Sarda[label=<<B>Dr. Sarda</B><BR />Imod behandling af indentured servants>]
+Aya[label=<<B>Aya</B><BR />Barsoomian>]
+Delvin[label=<<B>Jasper Delvin</B><BR />Creative Director hos AKP>]
+Althauser[label=<<B>Victor Althauser</B><BR />Familien Althauser ejer Althauser Rocketry>]
+Bayliss[label=<<B>Conrad Bayliss</B>>]
+}
+    
+    
 }
 
 SilentStar[label=<<B>Silent Star</B><BR />mystisk kult>]
@@ -72,17 +83,19 @@ Minnie[label=<<B>Minnie</B><BR />>]
 Patricia[label=<<B>Patricia Sousa</B><BR />>]
 AngelGirl[label=<<B>Angel Girl</B><BR />Meta-celebrity>]
 Alam[label=<<B>Alam</B><BR />ex-barejer<BR />Muterede af Exsurgent<BR />overdraget til Sylvest, formodentlig død>]
-PlanCo[label=<<B>Planetary Consortium</B>>]
 FaJing[label=<<B>Fa Jing</B><BR />Leverer isasteroider<BR />Har fået nogle aftaler afvist>]
+AlthauserRocketry[label=<<B>Althauser Rocketry</B>>]
+AKP[label=<<B>Arnault-Kieselhurst-Patrick</B>>]
+Lee[label=<<B>Calidas Lee</B><BR />kampagneleder for Dr. Sarda>]
 
 
 Philip -> Business[dir=none];
 Arvid -> Business[dir=none];
 Sylvest ->Alec[label=<hyrede>]
-Sylvest ->Philip[label=<hyrede>, ltail=cluster_PCs]
+Sylvest ->Philip[label=<hyrede>, lhead=cluster_PCs]
 Sylvest ->Matt[label=<hyrede>]
 Sylvest ->Aisling[label=<hyrede>]
-Sylvest -> Rooster[label=<hyrede>]
+Sylvest -> Rooster[label=<hyrede?>]
 Business -> Jacques[label=<handler med>, lhead=cluster_Barsoomians]
 Alan -> Alec[label=<var venner>,dir=both]
 Philip ->Alec[label=<dræbte>, ltail=cluster_PCs]
@@ -91,13 +104,16 @@ Philip ->Alan[label=<har reddet>, ltail=cluster_PCs]
 Delvin -> Nemo[label=<har skabt>]
 Nemo -> Delvin[label=<advokerer for>]
 SilentStar -> Devghali[label=<influerer?>]
-SilentStar -> PlanCo[label=<influerer?>]
+SilentStar -> PlanCo[label=<influerer?>, lhead=cluster_PlanCo]
 Rooster -> SilentStar[label=<efterforsker>]
-Cypher -> Philip[label=<rådgav>, ltail=cluster_PCs]
+Cypher -> Philip[label=<rådgiver>, lhead=cluster_PCs]
 Nemo -> Patricia[label=<ekskærester>,dir=both]
 Nemo ->  Minnie[label=<kærester>,dir=both]
 Nemo -> AngelGirl[label=<beef>,dir=both]
 Nemo -> Roland
 Nemo -> Xander
-
+Lee -> Sarda[label=<fører kampagne for>]
+FaJing -> Bayliss
+AKP -> Delvin
+AlthauserRocketry -> Althauser
 }
